@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">address book</string>
+    <string name="first_name">Ονομα</string>
+    <string name="phone">Τηλέφωνο</string>
+    <string name="kinito">Κινητό</string>
+    <string name="address">Διεύθυνση</string>
+    <string name="email">Email</string>
+    <string name="birth_date">Ημ/νία Γέννησης</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="add_address">Add Contact</string>
+    <string name="empty_list_text">Empty list</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="start">Back to list</string>
+</resources>
