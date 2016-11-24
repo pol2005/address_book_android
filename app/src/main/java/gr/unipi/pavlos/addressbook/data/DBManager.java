@@ -57,6 +57,16 @@ public class DBManager {
         return cursor;
     }
 
+    public Cursor fetchFilterable(String name) {
+        //String[] columns = new String[] { AddressBookContract.AddressBookEntry._ID, AddressBookContract.AddressBookEntry.COLUMN_NAME, AddressBookContract.AddressBookEntry.COLUMN_ADDRESS };
+        String selectQuery = "SELECT * FROM "+ AddressBookContract.AddressBookEntry.TABLE_NAME +" WHERE " + AddressBookContract.AddressBookEntry.COLUMN_NAME +" LIKE "+"'%"+name+"%'";
+        Cursor cursor = database.rawQuery(selectQuery,null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        return cursor;
+    }
+
     public int update(int _id, String name, String phone,String kinito,String address,String email,String birth_date) {
         ContentValues values = new ContentValues();
         values.put(AddressBookContract.AddressBookEntry.COLUMN_NAME, name);
